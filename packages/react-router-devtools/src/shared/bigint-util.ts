@@ -25,7 +25,7 @@ function convertBigIntToStringInner(data: any, depth: number, seen: WeakSet<obje
 		if (depth >= maxDepth) return MAX_DEPTH_PLACEHOLDER
 		seen.add(data)
 		const result = Object.fromEntries(
-			Object.entries(data).map(([key, value]) => [key, convertBigIntToStringInner(value, depth + 1, seen, maxDepth)]),
+			Object.entries(data).map(([key, value]) => [key, convertBigIntToStringInner(value, depth + 1, seen, maxDepth)])
 		)
 		seen.delete(data)
 		return result
