@@ -92,7 +92,7 @@ jobs:
           FLY_REGION: ${{ vars.FLY_REGION }}
         with:
           workspace_name: docs
-          app_name: react-router-devtools-docs-release
+          app_name: react-router-devtools
           use_isolated_workspace: true
           env_vars: |
             APP_ENV=production
