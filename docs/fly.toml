@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for react-router-devtools-docs on 2025-10-09T12:48:17+02:00
+# fly.toml app configuration file generated for react-router-devtools on 2026-04-05T18:04:39+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'react-router-devtools-docs'
+app = 'react-router-devtools'
 primary_region = 'fra'
 
 [build]
@@ -18,3 +18,6 @@ primary_region = 'fra'
 
 [[vm]]
   size = 'shared-cpu-1x'
+  memory = '256mb'
+  cpus = 1
+  memory_mb = 256
