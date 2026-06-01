@@ -1,5 +1,12 @@
 # react-router-devtools
 
+## 6.2.1
+
+### Patch Changes
+
+- 933aad5: Fix AST transform to correctly handle aliased imports (#251)
+- 933aad5: Add depth limit and cycle detection to `convertBigIntToString` to prevent infinite recursion on circular or deeply nested objects (#250)
+
 ## 6.0.1
 
 ### Patch Changes
