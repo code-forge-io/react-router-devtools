@@ -18,13 +18,13 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/forge-42/react-router-devtools.git"
+		"url": "git+https://github.com/code-forge-io/react-router-devtools.git"
 	},
 	"bugs": {
-		"url": "https://github.com/forge-42/react-router-devtools/issues"
+		"url": "https://github.com/code-forge-io/react-router-devtools/issues"
 	},
 	"homepage": "https://react-router-devtools.forge42.dev/",
-	"readme": "https://github.com/forge-42/react-router-devtools#readme",
+	"readme": "https://github.com/code-forge-io/react-router-devtools#readme",
 	"scripts": {
 		"build": "nx affected --targets=build --exclude=test-apps/**,docs/**",
 		"build:all": "nx run-many --targets=build --exclude=test-apps/**,docs/**",
