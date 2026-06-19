@@ -43,7 +43,7 @@
 		"local-release": "changeset version && changeset publish",
 		"version": "changeset version",
 		"test:unused": "knip",
-		"test:deps": "sherif -i react-router-devtools -i tailwindcss",
+		"test:deps": "sherif -i react-router-devtools -i tailwindcss -p react-router-v8-vite",
 		"watch": "pnpm run build:all && nx watch --all -- pnpm run build:all"
 	},
 	"license": "MIT",
@@ -67,7 +67,9 @@
 	"pnpm": {
 		"onlyBuiltDependencies": ["esbuild", "msw"],
 		"overrides": {
-			"react-router-devtools": "workspace:*"
+			"react-router-devtools": "workspace:*",
+			"react": "19.2.7",
+			"react-dom": "19.2.7"
 		}
 	},
 	"private": true
