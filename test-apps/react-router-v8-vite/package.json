@@ -1,5 +1,5 @@
 {
-  "name": "remix-vite",
+  "name": "react-router-v8-vite",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -7,29 +7,25 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/dev": "7.9.5",
-    "@react-router/node": "7.9.5",
-    "@react-router/serve": "7.9.5",
+    "@react-router/node": "^8.0.1",
+    "@react-router/serve": "^8.0.1",
     "isbot": "^5.1.27",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-router": "^7.9.3"
+    "react-router": "^8.0.1"
   },
   "devDependencies": {
-    "@react-router/fs-routes": "7.9.3",
+    "@react-router/dev": "^8.0.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "eslint": "^9.19.0",
-    "react-router-devtools": "^6.2.1",
+    "react-router-devtools": "workspace:*",
     "typescript": "^5.9.3",
-    "vite": "^7.2.2",
-    "vite-plugin-inspect": "^10.1.0",
-    "vite-tsconfig-paths": "5.1.4"
+    "vite": "^8.0.16"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.19.0"
   }
 }
