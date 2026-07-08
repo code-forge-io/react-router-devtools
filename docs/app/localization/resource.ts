@@ -1,7 +1,8 @@
 import bosnian from "../../resources/locales/bs/common.json"
 import english from "../../resources/locales/en/common.json"
+import korean from "../../resources/locales/ko/common.json"
 
-const languages = ["en", "bs"] as const
+const languages = ["en", "bs", "ko"] as const
 export const supportedLanguages = [...languages]
 export type Language = (typeof languages)[number]
 
@@ -17,6 +18,9 @@ export const resources: Record<Language, Resource> = {
 	},
 	bs: {
 		common: bosnian,
+	},
+	ko: {
+		common: korean,
 	},
 }
 
