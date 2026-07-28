@@ -3,6 +3,8 @@ import { ViteNodeRunner } from "vite-node/client"
 import { ViteNodeServer } from "vite-node/server"
 import { installSourcemapsSupport } from "vite-node/source-map"
 
+const viteMajor = Number(viteVersion.split(".")[0])
+
 // create vite server
 const server = await createServer({
 	mode: "development",
@@ -17,11 +19,14 @@ const server = await createServer({
 		noDiscovery: true,
 	},
 	configFile: false,
-	envFile: false,
+	// Vite 8 deprecated `envFile` in favour of `envDir: false` and warns when
+	// it is passed. Older peers (>=5) only understand `envFile`, so pick the
+	// key the installed Vite expects.
+	...(viteMajor >= 8 ? ({ envDir: false } as const) : ({ envFile: false } as const)),
 	plugins: [],
 })
 // For old Vite, this is need to initialize the plugins.
-if (Number(viteVersion.split(".")[0]) < 6) {
+if (viteMajor < 6) {
 	await server.pluginContainer.buildStart({})
 }
 
