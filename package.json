@@ -40,8 +40,8 @@
 		"check:fix": "biome check --fix .",
 		"changeset": "changeset",
 		"release": "changeset publish",
-		"local-release": "changeset version && changeset publish",
-		"version": "changeset version",
+		"local-release": "changeset version && biome format --write . && changeset publish",
+		"version": "changeset version && biome format --write .",
 		"test:unused": "knip",
 		"test:deps": "sherif -i react-router-devtools -i tailwindcss -p react-router-v8-vite",
 		"watch": "pnpm run build:all && nx watch --all -- pnpm run build:all"
