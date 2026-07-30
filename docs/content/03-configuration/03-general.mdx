@@ -87,6 +87,21 @@ export default defineConfig({
 });
 ```
 
+You can also control this behavior using environment variables.
+
+Again, you can selectively include different parts:
+
+- **`VITE_INCLUDE_CLIENT_IN_PROD=true`**: Include the devtools UI in production
+- **`VITE_INCLUDE_SERVER_IN_PROD=true`**: Include server-side logging and utilities in production
+- **`VITE_INCLUDE_DEVTOOLS_IN_PROD=true`**: Include TanStack DevTools integration in production
+
+**Example:**
+```sh
+# VITE_INCLUDE_CLIENT_IN_PROD=true
+VITE_INCLUDE_SERVER_IN_PROD=true # Include server logs in production
+VITE_INCLUDE_DEVTOOLS_IN_PROD=false
+```
+
 <WarningAlert title="Be careful!">
 If you decide to deploy parts to production you should be very careful that you don't expose the dev tools to your clients or anybody
 who is not supposed to see them.

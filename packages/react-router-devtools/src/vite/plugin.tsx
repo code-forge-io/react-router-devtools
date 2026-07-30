@@ -182,9 +182,9 @@ export const reactRouterDevTools: (args?: ReactRouterViteConfig) => Plugin[] = (
 		editorName: "Editor",
 	}
 
-	const includeClient = args?.includeInProd?.client ?? false
-	const includeServer = args?.includeInProd?.server ?? false
-	const includeDevtools = args?.includeInProd?.devTools ?? false
+	const includeClient = args?.includeInProd?.client ?? process.env.VITE_INCLUDE_CLIENT_IN_PROD === "true"
+	const includeServer = args?.includeInProd?.server ?? process.env.VITE_INCLUDE_SERVER_IN_PROD === "true"
+	const includeDevtools = args?.includeInProd?.devTools ?? process.env.VITE_INCLUDE_DEVTOOLS_IN_PROD === "true"
 	let port = 5173
 	// Get appDir synchronously from cache (will be populated when first route loads)
 	const appDir = cachedAppDir || "./app"
