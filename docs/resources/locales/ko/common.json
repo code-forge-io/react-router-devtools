@@ -1,0 +1,66 @@
+{
+	"hi": "React Router는 정말 훌륭해요!",
+	"navigation": {
+		"back": "뒤로 가기",
+		"home": "홈으로 돌아가기"
+	},
+	"error": {
+		"500": {
+			"title": "문제가 발생했습니다!",
+			"description": "서버에서 예기치 않은 문제가 발생한 것 같습니다."
+		},
+		"404": {
+			"title": "페이지를 찾을 수 없습니다!",
+			"description": "이런! 찾으시는 페이지가 사라진 것 같습니다."
+		},
+		"403": {
+			"title": "권한이 없습니다!",
+			"description": "이 페이지에 접근할 수 없는 것 같습니다."
+		},
+		"200": {
+			"title": "문제가 발생했습니다!",
+			"description": "서버에서 예기치 않은 문제가 발생한 것 같습니다."
+		}
+	},
+	"links": {
+		"previous": "이전",
+		"next": "다음",
+		"report_an_issue_on_this_page": "이 페이지의 문제 신고하기",
+		"edit_this_page": "이 페이지 수정하기"
+	},
+	"p": {
+		"last_update": "마지막 업데이트: ",
+		"version": "버전",
+		"all_rights_reserved": "모든 권리 보유.",
+		"search_by": "검색 제공"
+	},
+	"buttons": {
+		"copy": "복사",
+		"copied": "복사됨",
+		"home": "홈으로 돌아가기",
+		"back": "뒤로 가기",
+		"clear": "지우기"
+	},
+	"titles": {
+		"good_to_know": "알아두면 좋은 정보",
+		"warning": "경고"
+	},
+	"text": {
+		"result_one": "{{count}}개의 결과",
+		"result_other": "{{count}}개의 결과",
+		"adjust_search": "검색어를 조정하거나 오타가 없는지 확인해 보세요",
+		"no_results_for": "다음에 대한 검색 결과가 없습니다",
+		"start_typing_to_search": "입력하여 검색하세요...",
+		"recent_searches": "최근 검색어"
+	},
+	"controls": {
+		"navigate": "이동",
+		"open": "열기",
+		"tab": "탭",
+		"select": "선택",
+		"cycle": "순환"
+	},
+	"placeholders": {
+		"search_documentation": "문서 검색..."
+	}
+}
